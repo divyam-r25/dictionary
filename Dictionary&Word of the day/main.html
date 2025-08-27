@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dictionary & Word of the Day App</title>
+<link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>DICTIONARY📖</h1>
+  <button class = "dark-toggle" id="dark-toggle" aria-pressed="false" aria-label="Toggle Dark Mode">🌙</button>
+</header>
+
+<main>
+  <section class="search-container">
+    <input type="search" id="searchInput" placeholder="Enter a word..." aria-label="Search word" autocomplete="off" />
+    <button id="searchButton" aria-label="Search button"> 🔍</button>
+  </section>
+
+  <section class="word-of-day-container fade-in" aria-live="polite" aria-atomic="true" aria-label="Word of the Day">
+    <h3>Word of the Day</h3>
+    <div id="wordOfDayContent">Loading...</div>
+    
+  </section>
+
+  <section class="results-container slide-in" id = "results=container" aria-live="polite" aria-atomic="true" aria-label="Search results">
+    <!--  Result  -->
+  </section>
+
+
+</main>
+
+<script src = "script.js"></script>
+</body>
+</html>
